@@ -46,19 +46,7 @@ const Index = () => {
                 Консультации по налогообложению и онлайн-обучение работе в программах 1С. Решаем сложные вопросы быстро — без очередей и лишних бумаг.
               </p>
 
-              {/* Stats */}
-              <div className="flex flex-wrap justify-center gap-8 mt-2">
 
-                <div className="flex flex-col items-center gap-1">
-                  <span className="text-3xl font-bold text-white">10 лет</span>
-                  <span className="text-sm text-white/60">на рынке</span>
-                </div>
-                <div className="w-px bg-white/20 hidden sm:block" />
-                <div className="flex flex-col items-center gap-1">
-                  <span className="text-3xl font-bold text-white">98%</span>
-                  <span className="text-sm text-white/60">довольных клиентов</span>
-                </div>
-              </div>
 
               <div className="flex flex-col sm:flex-row gap-4 mt-4">
                 <button className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-semibold text-slate-900 transition-all hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-transparent shadow-2xl">
