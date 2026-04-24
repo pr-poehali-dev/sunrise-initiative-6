@@ -48,11 +48,7 @@ const Index = () => {
 
               {/* Stats */}
               <div className="flex flex-wrap justify-center gap-8 mt-2">
-                <div className="flex flex-col items-center gap-1">
-                  <span className="text-3xl font-bold text-white">500+</span>
-                  <span className="text-sm text-white/60">клиентов</span>
-                </div>
-                <div className="w-px bg-white/20 hidden sm:block" />
+
                 <div className="flex flex-col items-center gap-1">
                   <span className="text-3xl font-bold text-white">10 лет</span>
                   <span className="text-sm text-white/60">на рынке</span>
