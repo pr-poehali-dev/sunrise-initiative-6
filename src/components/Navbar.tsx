@@ -40,7 +40,7 @@ export default function Navbar() {
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-400 to-blue-700 flex items-center justify-center">
               <Icon name="BookOpen" size={18} />
             </div>
-            <span className="text-white font-semibold text-lg">БухгалтерБюро</span>
+            <span className="text-white font-semibold text-lg">Бюро Л.Пачоли</span>
           </div>
         </a>
 
@@ -85,7 +85,7 @@ export default function Navbar() {
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-400 to-blue-700 flex items-center justify-center">
             <Icon name="BookOpen" size={18} />
           </div>
-          <span className="text-white font-semibold">БухгалтерБюро</span>
+          <span className="text-white font-semibold">Бюро Л.Пачоли</span>
         </a>
 
         <button
