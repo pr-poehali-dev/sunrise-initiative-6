@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import Icon from "@/components/ui/icon"
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -36,36 +37,34 @@ export default function Navbar() {
           href="/"
         >
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-              <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-              </svg>
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-400 to-blue-700 flex items-center justify-center">
+              <Icon name="BookOpen" size={18} />
             </div>
-            <span className="text-white font-semibold text-lg">DataPulse</span>
+            <span className="text-white font-semibold text-lg">БухгалтерБюро</span>
           </div>
         </a>
 
         <div className="absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-white/70 transition duration-200 hover:text-white md:flex md:space-x-2">
-          <a className="relative px-4 py-2 text-white/70 hover:text-white transition-colors cursor-pointer" href="#features">
-            <span className="relative z-20">Возможности</span>
+          <a className="relative px-4 py-2 text-white/70 hover:text-white transition-colors cursor-pointer" href="#services">
+            <span className="relative z-20">Услуги</span>
+          </a>
+          <a className="relative px-4 py-2 text-white/70 hover:text-white transition-colors cursor-pointer" href="#education">
+            <span className="relative z-20">Обучение 1С</span>
+          </a>
+          <a className="relative px-4 py-2 text-white/70 hover:text-white transition-colors cursor-pointer" href="#conferences">
+            <span className="relative z-20">Конференции</span>
           </a>
           <a className="relative px-4 py-2 text-white/70 hover:text-white transition-colors cursor-pointer" href="#pricing">
             <span className="relative z-20">Тарифы</span>
-          </a>
-          <a className="relative px-4 py-2 text-white/70 hover:text-white transition-colors cursor-pointer" href="#integrations">
-            <span className="relative z-20">Интеграции</span>
-          </a>
-          <a className="relative px-4 py-2 text-white/70 hover:text-white transition-colors cursor-pointer" href="#docs">
-            <span className="relative z-20">Документация</span>
           </a>
         </div>
 
         <div className="flex items-center gap-3">
           <a
-            href="#demo"
-            className="rounded-lg font-medium relative cursor-pointer hover:-translate-y-0.5 transition-all duration-200 inline-block text-center px-4 py-2 text-sm border bg-gradient-to-r from-blue-600 to-indigo-600 border-blue-400/30 text-white hover:from-blue-500 hover:to-indigo-500"
+            href="#consultation"
+            className="rounded-lg font-medium relative cursor-pointer hover:-translate-y-0.5 transition-all duration-200 inline-block text-center px-4 py-2 text-sm border bg-gradient-to-r from-blue-500 to-blue-700 border-blue-400/30 text-white hover:from-blue-400 hover:to-blue-600"
           >
-            Попробовать бесплатно
+            Записаться
           </a>
         </div>
       </header>
@@ -83,12 +82,10 @@ export default function Navbar() {
         }}
       >
         <a className="flex items-center justify-center gap-2" href="/">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-            <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-            </svg>
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-400 to-blue-700 flex items-center justify-center">
+            <Icon name="BookOpen" size={18} />
           </div>
-          <span className="text-white font-semibold">DataPulse</span>
+          <span className="text-white font-semibold">БухгалтерБюро</span>
         </a>
 
         <button
@@ -120,11 +117,25 @@ export default function Navbar() {
           >
             <nav className="flex flex-col space-y-4">
               <a
-                href="#features"
+                href="#services"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-left px-4 py-3 text-lg font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/10"
               >
-                Возможности
+                Услуги
+              </a>
+              <a
+                href="#education"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-left px-4 py-3 text-lg font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/10"
+              >
+                Обучение 1С
+              </a>
+              <a
+                href="#conferences"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-left px-4 py-3 text-lg font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/10"
+              >
+                Конференции
               </a>
               <a
                 href="#pricing"
@@ -133,27 +144,13 @@ export default function Navbar() {
               >
                 Тарифы
               </a>
-              <a
-                href="#integrations"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="text-left px-4 py-3 text-lg font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/10"
-              >
-                Интеграции
-              </a>
-              <a
-                href="#docs"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="text-left px-4 py-3 text-lg font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/10"
-              >
-                Документация
-              </a>
               <div className="border-t border-white/20 pt-4 mt-4 flex flex-col space-y-3">
                 <a
-                  href="#demo"
+                  href="#consultation"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="px-4 py-3 text-lg font-bold text-center rounded-lg transition-all duration-200 border bg-gradient-to-r from-blue-600 to-indigo-600 border-blue-400/30 text-white"
+                  className="px-4 py-3 text-lg font-bold text-center rounded-lg transition-all duration-200 border bg-gradient-to-r from-blue-500 to-blue-700 border-blue-400/30 text-white"
                 >
-                  Попробовать бесплатно
+                  Записаться на консультацию
                 </a>
               </div>
             </nav>
