@@ -38,7 +38,7 @@ const Index = () => {
               </div>
 
               <h1 className="text-5xl font-bold leading-tight tracking-tight text-white md:text-7xl text-balance drop-shadow-2xl">
-                Ваш бухгалтер
+                Налоговый консультант
                 <br />
                 <span className="text-blue-300">онлайн — 24/7</span>
               </h1>
